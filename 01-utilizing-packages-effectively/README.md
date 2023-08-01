@@ -20,3 +20,13 @@ In this task, you need to create a new Node.js project and install the Lodash pa
 8. Experiment with different Lodash functions and try using them in your code. For example, you can try using the "chunk" function to split an array into smaller chunks, or the "debounce" function to limit the frequency of a function call.
 
 9. Share your project with the class and ask them to review your code and provide feedback. You can also ask them to try using Lodash in their own projects and share their experiences.
+
+
+## Demonstrations
+```javascript
+// Flattening a deeply nested array using lodash
+const array = [1, 2, 3, [1, 2, 3, [1, 2, 3, [1, 2, 3]]]];
+const flattendArray = _.flattenDeep(array);
+
+console.log(`The flattened array "${flattendArray}", and checking if it is an array: ${Array.isArray(flattendArray).toString()}\n`);
+```
