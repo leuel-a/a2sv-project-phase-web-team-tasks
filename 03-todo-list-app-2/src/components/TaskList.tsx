@@ -52,34 +52,35 @@ const TaskList: React.FC<Props> = ({ tasks, setTasks }) => {
                                 {
                                     isEditing ? (
                                         <input
+                                            className="form-control mb-3"
                                             type="text"
                                             value={editedDescription}
                                             onChange={(e) => setEditedDescription(e.target.value)}
                                         />
                                     ) : (
                                         task.completed ? (
-                                            <h5 className="card-title text-decoration-line-through">{task.description}</h5>
+                                            <h5 className="card-title text-decoration-line-through mb-3 text-sm-center">{task.description}</h5>
                                         ) : (
-                                            <h5 className="card-title">{task.description}</h5>
+                                            <h5 className="card-title text-sm-center mb-3">{task.description}</h5>
                                         )
                                     )
                                 }
                                 <div className="d-flex justify-content-between">
                                     {
                                         isEditing ? (
-                                            <button className="btn btn-success" onClick={() => handleSave(task.id)}>Save</button>
+                                            <button className="btn btn-success px-4" onClick={() => handleSave(task.id)}>Save</button>
                                         ) : (
-                                            <button className="btn btn-primary" onClick={() => handleDone(task.id)}>
+                                            <button className="btn btn-primary px-3" onClick={() => handleDone(task.id)}>
                                                 {task.completed ? 'Undo' : 'Done'}
                                             </button>
                                         )
                                     }
                                     {
                                         isEditing ? (
-                                            <button className="btn btn-secondary" onClick={() => setEditingTaskId(null)}>Cancel</button>
+                                            <button className="btn btn-secondary px-3" onClick={() => setEditingTaskId(null)}>Cancel</button>
                                         ) : (
                                             <>
-                                                <button className="btn btn-warning" onClick={() => handleEdit(task.id, task.description)}>Edit</button>
+                                                <button className="btn btn-warning px-4" onClick={() => handleEdit(task.id, task.description)}>Edit</button>
                                                 <button className="btn btn-danger" onClick={() => handleDelete(task.id)}>Delete</button>
                                             </>
                                         )
