@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Task } from "../models/models";
 
 interface Props {
@@ -7,7 +7,10 @@ interface Props {
 }
 
 const TaskList: React.FC<Props> = ({ tasks, setTasks }) => {
-    const handleDelete =  (id: number) => {
+    const [editingTaskId, setEditingTaskId] = useState<number | null>(null);
+    const [editedDescription, setEditedDescription] = useState<string>('');
+
+    const handleDelete = (id: number) => {
         setTasks(tasks.filter((task) => task.id !== id));
     }
 
@@ -20,25 +23,67 @@ const TaskList: React.FC<Props> = ({ tasks, setTasks }) => {
         }));
     };
 
+    const handleEdit = (id: number, description: string) => {
+        setEditingTaskId(id);
+        setEditedDescription(description);
+    }
+
+    const handleSave = (id: number) => {
+        if (editedDescription.trim() !== '') {
+            setTasks(tasks.map((task) => {
+                if (task.id === id) {
+                    return { ...task, description: editedDescription };
+                }
+                return task;
+            }));
+            setEditingTaskId(null);
+            setEditedDescription('');
+        }
+    }
+
     return (
         <div className="row">
-            { tasks.map((task) => {
+            {tasks.map((task) => {
+                const isEditing = task.id === editingTaskId;
                 return (
                     <div key={task.id} className="col-12 col-md-6 col-lg-4 col-xl-3">
                         <div className="card mt-3">
                             <div className="card-body">
                                 {
-                                    task.completed ? (
-                                        <h5 className="card-title text-decoration-line-through">{task.description}</h5>
+                                    isEditing ? (
+                                        <input
+                                            type="text"
+                                            value={editedDescription}
+                                            onChange={(e) => setEditedDescription(e.target.value)}
+                                        />
                                     ) : (
-                                        <h5 className="card-title">{task.description}</h5>
+                                        task.completed ? (
+                                            <h5 className="card-title text-decoration-line-through">{task.description}</h5>
+                                        ) : (
+                                            <h5 className="card-title">{task.description}</h5>
+                                        )
                                     )
                                 }
                                 <div className="d-flex justify-content-between">
-                                    <button className="btn btn-primary" onClick={() => handleDone(task.id)} >
-                                        { task.completed ? 'Undo' : 'Done' }
-                                    </button>
-                                    <button className="btn btn-danger" onClick={() => handleDelete(task.id)}>Delete</button>
+                                    {
+                                        isEditing ? (
+                                            <button className="btn btn-success" onClick={() => handleSave(task.id)}>Save</button>
+                                        ) : (
+                                            <button className="btn btn-primary" onClick={() => handleDone(task.id)}>
+                                                {task.completed ? 'Undo' : 'Done'}
+                                            </button>
+                                        )
+                                    }
+                                    {
+                                        isEditing ? (
+                                            <button className="btn btn-secondary" onClick={() => setEditingTaskId(null)}>Cancel</button>
+                                        ) : (
+                                            <>
+                                                <button className="btn btn-warning" onClick={() => handleEdit(task.id, task.description)}>Edit</button>
+                                                <button className="btn btn-danger" onClick={() => handleDelete(task.id)}>Delete</button>
+                                            </>
+                                        )
+                                    }
                                 </div>
                             </div>
                         </div>
