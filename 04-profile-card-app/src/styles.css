@@ -1,0 +1,68 @@
+.main-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    max-width: 420px;
+    height: 720px;
+    border-radius: 50px;
+    background: #26235C;
+    box-shadow: 0px 4px 75px 0px rgba(0, 0, 0, 0.25);
+}
+
+#avatar-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#name {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#job {
+    color: #A79AE0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.socials-container a {
+    color: black;
+    font-size: 2rem;
+}
+
