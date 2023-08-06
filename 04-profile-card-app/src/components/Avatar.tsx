@@ -13,7 +13,7 @@ const Avatar: React.FC = () => {
                 className='img-fluid rounded-circle'
             />
             <div className='description'>
-                <h2 id='name'>Canelo Alvarez</h2>
+                <h2 id='name'>Leuel Asfaw</h2>
                 <h3 id='job'>Web Developer</h3>
             </div>
         </div>
