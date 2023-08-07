@@ -12,3 +12,7 @@ Clone the repository with `git clone` and the in the terminal just run the `npm 
 2. Run `npm install` to install all the necessary dependecies
 3. Run `npm start`
 4. You can find the application served in the `localhost:3000`
+
+## Deployment Link
+
+[Live Site](https://profile-card-app-react.netlify.app/)
