@@ -15,3 +15,4 @@ This is a simple React counter application that allows you to increment and decr
 4. And run `npm start`
 
 ## Deployed Link
+[Live Link](https://a2sv-project-phase-web-team-tasks-68r5.vercel.app/)
