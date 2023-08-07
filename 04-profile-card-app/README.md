@@ -15,4 +15,4 @@ Clone the repository with `git clone` and the in the terminal just run the `npm 
 
 ## Deployment Link
 
-[Live Site](https://profile-card-app-react.netlify.app/)
+[Live Site](https://a2sv-project-phase-web-team-tasks.vercel.app/)

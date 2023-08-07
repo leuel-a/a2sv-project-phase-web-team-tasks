@@ -5,9 +5,9 @@ import Card from './components/Card';
 
 const App: React.FC = () => {
   return (
-      <div>
+      <>
         <Card />
-      </div>
+      </>
   );
 }
 
