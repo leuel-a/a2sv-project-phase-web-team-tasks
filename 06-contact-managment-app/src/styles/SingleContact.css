@@ -1,0 +1,32 @@
+/* SingleContact.css */
+
+.single-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-details-card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details-header {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.contact-details {
+    font-size: 16px;
+}
+
+.contact-details-item {
+    margin-bottom: 10px;
+}
+
+.contact-details-label {
+    font-weight: bold;
+}
