@@ -1,1 +1,1 @@
-export { addTask, deleteTask, editTask, toogleTask } from './tasks/tasksActions';
+export { addTask, deleteTask, editTask, toggleTask, toggleCompletion } from './tasks/tasksActions';

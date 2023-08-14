@@ -1,4 +1,5 @@
-import { ADD_TASK, DELETE_TASK } from './tasksTypes';
+import {ADD_TASK, DELETE_TASK, EDIT_TASK, TOGGLE_COMPLETE, TOGGLE_TASK} from './tasksTypes';
+import TasksReducer from "./tasksReducer";
 
 // This is where I define my action creators
 // Note that I will not be using all of them in this project
@@ -22,27 +23,24 @@ export const deleteTask = (id) => {
 
 export const editTask = (task) => {
   return {
-    type: 'EDIT_TASK',
+    type: EDIT_TASK,
     payload: {
       task,
     }
   }
 }
 
-export const completeTask = (id) => {
+export const toggleTask = (id) => {
   return {
-    type: 'COMPLETE_TASK',
+    type: TOGGLE_TASK,
     payload: {
       id,
     }
   }
 }
 
-export const toogleTask = (id) => {
+export const toggleCompletion = () => {
   return {
-    type: 'TOGGLE_TASK',
-    payload: {
-      id,
-    }
+    type: TOGGLE_COMPLETE,
   }
 }

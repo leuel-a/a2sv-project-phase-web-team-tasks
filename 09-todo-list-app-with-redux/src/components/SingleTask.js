@@ -1,15 +1,19 @@
 import { useParams, useNavigate } from "react-router";
 import NavBar from './NavBar';
 import {addTask, editTask} from "../redux";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
 const SingleTask = () => {
   const { id } = useParams();
-  const tasksJSON = localStorage.getItem('tasks');
-  const tasks = tasksJSON ? JSON.parse(tasksJSON) : [];
+  // const tasksJSON = localStorage.getItem('tasks');
+  // const tasks = tasksJSON ? JSON.parse(tasksJSON) : [];
+
+  // Here I will use the current state of the tasks to update this currentTask
+  // Do not use the localStorage here, because it will not be updated
+  const tasks = useSelector(state => state.tasks);
   const currentTask = tasks.find(task => task.id === Number(id));
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -20,7 +24,7 @@ const SingleTask = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newTask = {
-      id: Date.now(),
+      id: currentTask.id,
       title,
       description,
       completed: false,
@@ -30,6 +34,7 @@ const SingleTask = () => {
     const newTasks = [ ...storedTasks, newTask ];
 
     localStorage.setItem('tasks', JSON.stringify(newTasks));
+    console.log(newTask);
     dispatch(editTask(newTask));
     navigate('/'); // Send us to the home page after we finish with adding a new task and updating the state/
   }

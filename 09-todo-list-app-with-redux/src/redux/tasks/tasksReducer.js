@@ -1,5 +1,8 @@
+import {DELETE_TASK, ADD_TASK, EDIT_TASK, TOGGLE_TASK, TOGGLE_COMPLETE} from "./tasksTypes";
+
 const initialState = {
   tasks: [],
+  showCompleted: false,
 }
 
 // Here I define the tasksReducer function
@@ -9,65 +12,43 @@ const initialState = {
 
 const tasksReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'ADD_TASK':
+    case ADD_TASK:
       return {
         ...state,
-        tasks: [...state.tasks, action.payload],
+        tasks: [...state.tasks, action.payload.task],
       }
-    case 'REMOVE_TASK':
+    case DELETE_TASK:
       return {
         ...state,
-        tasks: state.tasks.filter((task) => task.id !== Number(action.payload)),
+        tasks: state.tasks.filter((task) => task.id !== Number(action.payload.id)),
       }
-    case 'EDIT_TASK':
+    case EDIT_TASK:
       return {
         ...state,
-        tasks: state.tasks.map((task) => {
+        tasks: state.tasks.map(task => {
+          if (task.id === action.payload.task.id) {
+            return action.payload.task;
+          }
+          return task;
+        })
+      }
+    case TOGGLE_TASK:
+      return {
+        ...state,
+        tasks: state.tasks.map(task => {
           if (task.id === action.payload.id) {
-            return {
-              ...task,
-              ...action.payload,
-            }
-          }
-          else {
-            return task;
-          }
-        })
-      }
-    case 'SET_TASKS':
-      return {
-        ...state,
-        tasks: action.payload,
-      }
-    case 'COMPLETE_TASK':
-      return {
-        ...state,
-        tasks: state.tasks.map((task) => {
-          if (task.id === action.payload) {
-            return {
-              ...task,
-              completed: true,
-            }
-          }
-          else {
-            return task;
-          }
-        })
-      }
-    case 'TOGGLE_TASK':
-      return {
-        ...state,
-        tasks: state.tasks.map((task) => {
-          if (task.id === action.payload) {
             return {
               ...task,
               completed: !task.completed,
             }
           }
-          else {
-            return task;
-          }
+          return task;
         })
+      }
+    case TOGGLE_COMPLETE:
+      return {
+        ...state,
+        showCompleted: !state.showCompleted,
       }
     default:
       return state
