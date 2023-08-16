@@ -8,6 +8,7 @@ const TaskList = () => {
   const tasks = useSelector(state => state.tasks);
   const showCompleted = useSelector(state => state.showCompleted);
   const dispatch = useDispatch();
+  // This is to implement the filter functionality to show only the tasks that are completed
   const filteredTasks = showCompleted ? tasks.filter(task => task.completed) : tasks;
 
   return (
