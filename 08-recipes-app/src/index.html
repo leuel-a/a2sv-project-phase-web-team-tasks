@@ -53,7 +53,7 @@
     </div>
 
 
-    <div class="my-4 flex justify-center">
+    <!-- <div class="my-4 flex justify-center">
       <div class="w-full px-6 md:px-12">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="mb-4 md:mb-0 md:flex md:items-center">
@@ -72,6 +72,19 @@
           <input class="border border-gray-500 px-6 py-3 rounded-3xl w-full" placeholder="Search" />
         </div>
       </div>
+    </div> -->
+
+    <div class="flex flex-col md:flex-row items-center justify-between p-3 space-y-4 md:space-y-0">
+      <div class="text-3xl md:text-4xl">A2SV Recipes</div>
+      <div class="flex md:space-x-4 items-center">
+        <div class="hidden md:flex bg-gray-400 p-3 rounded-3xl px-4 md:px-10 w-full items-center justify-between">
+          <span>All Categories</span>
+          <svg class="w-5 text-black" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+          </svg>
+        </div>
+        <input class="border border-gray-500 px-6 py-3 rounded-3xl w-full" placeholder="Search" />
+      </div>
     </div>
 
     <div class="relative">
@@ -83,7 +96,7 @@
     </div>
   </div>
 
-  <main class="mt-10 grid grid-cols-5">
+  <main class="mt-10 grid lg:grid-cols-5">
     <div class="hidden lg:block text-center col-span-1 text-primary">
       <!-- Filter Recipes -->
       <h2 class="text-5xl font-montez text-primary font-bold">Filter Recipes</h2>
@@ -161,7 +174,7 @@
 
     <div class="flex flex-col col-span-4">
       <div class="py-5 relative">
-        <ul class="flex justify-center gap-6 md:gap-48 text-primary">
+        <ul class="flex justify-end sm:justify-center w-full space-x-6 md:gap-48 text-primary">
           <li class="hidden md:block">
             <a href="#">Home</a>
           </li>
@@ -360,16 +373,15 @@
             </div>
           </div>
       </div>
-
+    </div>
+  </div>
   </main>
 
-  <div class="bg-black h-56 mt-10 text-white">
-    <div class="text-center pt-8">
-      <h5>
-        <span>Contact Us</span>
-        <a href="#" class="font-bold">Here!</a>
-      </h5>
-    </div>
+  <div class="bg-black h-56 mt-10 text-white text-center pt-8">
+    <h5>
+      <span>Contact Us</span>
+      <a href="#" class="font-bold">Here!</a>
+    </h5>
   </div>
 
   <script>

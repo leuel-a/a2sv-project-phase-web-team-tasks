@@ -1,23 +1,30 @@
+import { useParams, useNavigate } from "react-router";
+import NavBar from './NavBar';
+import {addTask, editTask} from "../redux";
 import { useDispatch, useSelector } from "react-redux";
-import NavBar from "./NavBar";
-import { Link, useNavigate } from 'react-router-dom';
-import { addTask } from "../redux";
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const AddTask = () => {
-  const [ title, setTitle ] = useState('');
-  const [ description, setDescription ] = useState('');
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
 
-  // Handle the submission of a new post
-  // It will first store the object to the localStorage
-  // And then it will dispatch the addTask action creator to
-  // update the state of the application
+const SingleTask = () => {
+  const { id } = useParams();
+  // const tasksJSON = localStorage.getItem('tasks');
+  // const tasks = tasksJSON ? JSON.parse(tasksJSON) : [];
+
+  // Here I will use the current state of the tasks to update this currentTask
+  // Do not use the localStorage here, because it will not be updated
+  const tasks = useSelector(state => state.tasks);
+  const currentTask = tasks.find(task => task.id === Number(id));
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const [ title, setTitle ] = useState(currentTask.title);
+  const [ description, setDescription ] = useState(currentTask.description);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newTask = {
-      id: Date.now(),
+      id: currentTask.id,
       title,
       description,
       completed: false,
@@ -25,15 +32,17 @@ const AddTask = () => {
     const fromStorage = JSON.parse(localStorage.getItem('tasks'));
     const storedTasks = fromStorage != null ? fromStorage : [];
     const newTasks = [ ...storedTasks, newTask ];
+
     localStorage.setItem('tasks', JSON.stringify(newTasks));
-    dispatch(addTask(newTask));
+    console.log(newTask);
+    dispatch(editTask(newTask));
     navigate('/'); // Send us to the home page after we finish with adding a new task and updating the state/
   }
 
   return (
     <div className='container'>
       <NavBar />
-      <div className='container pt-3' id='create-form-div'>
+      <div className='container pt-5'>
         <form onSubmit={ (e) => handleSubmit(e) } action="#" className='border border-2 p-5 d-flex flex-column gap-5'>
           <div className='d-flex flex-column gap-2'>
             <label className='d-block'>Task Name</label>
@@ -48,19 +57,17 @@ const AddTask = () => {
             />
           </div>
           <div className='d-flex flex-row justify-content-end'>
-            <button type='submit' className='btn btn-dark'>Create Task</button>
+            <button type='submit' className='btn btn-dark'>Edit Task</button>
           </div>
         </form>
       </div>
-      <div className='container'>
-        <span className='btn btn-dark'>
-          <Link to='/' className='text-decoration-none text-light'>
-            Go Back
-          </Link>
-        </span>
-      </div>
+      <span>
+        <Link to='/' className='btn btn-dark mt-3 ms-3'>
+          Go Back
+        </Link>
+      </span>
     </div>
   )
 }
 
-export default AddTask;
+export default SingleTask;

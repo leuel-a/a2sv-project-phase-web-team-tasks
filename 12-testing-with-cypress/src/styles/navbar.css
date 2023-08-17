@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+.nav-bar-css {
+  background-color: rgb(43, 99, 82);
+}
+
+#nav-brand {
+  font-family: 'Montez', cursive;
+  color: rgb(255, 255, 255);
+}
+
+#nav-btns > button:hover {
+  border: 1px solid white;
+}

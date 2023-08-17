@@ -4,129 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6319b92c-a96a-4400-b1c1-32cde792ec4f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/.idea/10-note-taking-app-with-redux.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-note-taking-app-with-redux/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EditPost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/apiSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/blogSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-next-blog-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../07-next-blog-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-next-blog-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../07-next-blog-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/.idea/08-redux-note-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-note-app/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-task-app/craco.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/.idea/08-redux-todo-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-redux-todo-app/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/.idea/09-note-taking-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/next.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/src/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/src/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/src/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/src/app/notes/pages.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/src/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/src/components/Header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/tailwind.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-note-taking-app/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-task-app-redux/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-todo-list-app-with-redux/src/components/TaskList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../09-todo-list-app-with-redux/src/components/TaskList.js" afterDir="false" />
-    </list>
+    <list default="true" id="6319b92c-a96a-4400-b1c1-32cde792ec4f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,6 +75,7 @@
       <updated>1692083332500</updated>
       <workItem from="1692083333853" duration="17152000" />
       <workItem from="1692158123746" duration="1488000" />
+      <workItem from="1692173583787" duration="32000" />
     </task>
     <servers />
   </component>

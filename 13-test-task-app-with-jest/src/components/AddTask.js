@@ -37,9 +37,10 @@ const AddTask = () => {
         <form onSubmit={ (e) => handleSubmit(e) } action="#" className='border border-2 p-5 d-flex flex-column gap-5'>
           <div className='d-flex flex-column gap-2'>
             <label className='d-block'>Task Name</label>
-            <input value={ title } onChange={ (e) => setTitle(e.target.value) } className='form-control' type="text" placeholder='Enter task here'/>
+            <input required value={ title } onChange={ (e) => setTitle(e.target.value) } className='form-control' type="text" placeholder='Enter task here'/>
             <label className='pt-3'>Task Description</label>
             <textarea
+              required
               className='form-control'
               rows={ 7 }
               value={ description }
